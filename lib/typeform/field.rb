@@ -8,8 +8,9 @@ module Typeform
     property :required
     property :choices
     property :steps, type: Integer
+    property :labels
 
-    attr_accessor :type, :question, :description, :required, :choices, :steps
+    attr_accessor :type, :question, :description, :required, :choices, :steps, :labels
 
     # This value could take...
     # short_text:      The ShortText Field is the typical, standard text input that you would expect.
@@ -47,6 +48,10 @@ module Typeform
 
     def steps
       @steps
+    end
+
+    def labels
+      @labels
     end
   end
 end
