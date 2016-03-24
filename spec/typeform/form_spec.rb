@@ -17,7 +17,6 @@ describe Typeform::Form do
     form = Typeform::Form.new
     form.title = "title"
     form.fields = [field1]
-    form.design_id = "design_id"
     form.webhook_submit_url = "webhook_submit_url"
 
     form.to_json
@@ -36,7 +35,6 @@ describe Typeform::Form do
             choices: [{label: "Metro"}, {label: "Car"}]
           }
         ],
-        design_id: "design_id",
         webhook_submit_url: "webhook_submit_url"
       )
     end

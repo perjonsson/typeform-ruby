@@ -6,10 +6,9 @@ module Typeform
 
     property :title, type: String
     property :fields
-    property :design_id, type: Integer
     property :webhook_submit_url, type: String
 
-    attr_accessor :title, :fields, :design_id, :webhook_submit_url
+    attr_accessor :title, :fields, :webhook_submit_url
 
     def title
       @title
@@ -17,10 +16,6 @@ module Typeform
 
     def fields
       @fields
-    end
-
-    def design_id
-      @design_id ||= ""
     end
 
     def webhook_submit_url
