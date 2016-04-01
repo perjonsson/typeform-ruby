@@ -35,23 +35,23 @@ module Typeform
     end
 
     def description
-      @description rescue nil
+      @description
     end
 
     def required
-      @required rescue nil
+      @required
     end
 
     def choices
-      @choices rescue nil
+      @choices
     end
 
     def steps
-      @steps rescue nil
+      @steps
     end
 
     def labels
-      @labels rescue nil
+      @labels
     end
   end
 end
